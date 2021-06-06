@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import anchor from '../assets/images/anchor-butter.jpg';
+import anchor from './images/anchor-butter.jpg';
 // Importing components
 import Carousal from "./carousal.component";
 

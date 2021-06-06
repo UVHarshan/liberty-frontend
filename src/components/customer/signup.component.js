@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 export default class Signup extends Component {
@@ -72,12 +73,12 @@ export default class Signup extends Component {
     
         console.log(customer);
     
-        // connectiong frontend to the backend using axios
-        // axios
-        //   .post("http://localhost:5000/exercises/add", exercise)
-        //   .then((res) => console.log(res.data));
+        // connecting frontend to the backend using axios( Passing the newly created customer object to the server end-point)
+        axios
+          .post("http://localhost:5000/customers/add", customer)
+          .then((res) => console.log(res.data));
     
-        window.location = "/signup";
+        //window.location = "/customer/signup";
     }
 
     render() {

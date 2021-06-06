@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import dairy from '../assets/images/Carousal/Dairy.jpg';
-import grocery  from '../assets/images/Carousal/Grocery.png';
-import house from '../assets/images/Carousal/Household.jpg';
-import vege from '../assets/images/Carousal/Vegetables.jpg';
+import dairy from './images/Carousal/Dairy.jpg';
+import grocery  from './images/Carousal/Grocery.png';
+import house from './images/Carousal/Household.jpg';
+import vege from './images/Carousal/Vegetables.jpg';
 
 
 export default class Carousal extends Component {

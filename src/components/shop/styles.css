@@ -1,0 +1,14 @@
+.sidebar{
+    /* position: fixed; */
+    /* background-color: aqua; */
+    height: 37.5rem;
+}
+
+#sidebar  .nav-item{
+    text-align: left;
+}
+
+.add-product{
+    width: 40rem;
+}
+

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/Liberty.PNG';
+import logo from './images/Liberty.PNG';
 
 export default class Footer extends Component {
 

@@ -8,7 +8,7 @@ export default class Navbar extends Component {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-                <Link to="/" className="navbar-brand">Liberty Super</Link>
+                <Link to="/customer/landing" className="navbar-brand">Liberty Super</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +17,10 @@ export default class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                           <Link to="/login" className="nav-link" aria-current="page">Login</Link>
+                           <Link to="/customer/login" className="nav-link" aria-current="page">Login</Link>
                         </li>
                         <li className="nav-item">
-                           <Link to="/signup" className="nav-link">Sign Up </Link>
+                           <Link to="/customer/signup" className="nav-link">Sign Up </Link>
                         </li>
                         <li className="nav-item dropdown">
                            <Link to="" className="nav-link dropdown-toggle" id="navbarDropdown" role="button"

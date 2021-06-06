@@ -1,32 +1,20 @@
 import { BrowserRouter as Router, Route} from "react-router-dom";
-import './App.css';
+//import './App.css';
 
-
-// Importing components
-import Footer from "./components/footer.component";
-import Navbar from "./components/navbar.component";
-import Signup from "./components/signup.component";
-import Login from "./components/login.component";
-import Landing from "./components/landing.component";
+// Importing components( Should import Customer and Shop main components only)
+import Customer from "./components/customer/customerMain.component";
+import Shop from "./components/shop/shopMain.component";
 
 function App() {
   return (    
     <Router>
-      <div class="container-fluid">
-        <Navbar/>
-        <br/>        
-        <Landing/>
+      <div class="container-fluid">      
         
-        <Route path="/signup" component={Signup} />
-        <Route path="/login" component={Login} />
-
-
-        <Footer/>
+        <Route path="/customer" component={Customer} />
+        <Route path="/shop" component={Shop} />
       </div>    
 
-    </Router>
-
-    
+    </Router>    
    
   );
 }
