@@ -8,11 +8,10 @@ import Shop from "./components/shop/shopMain.component";
 function App() {
   return (    
     <Router>
-      <div class="container-fluid">      
-        
+                   
         <Route path="/customer" component={Customer} />
         <Route path="/shop" component={Shop} />
-      </div>    
+    
 
     </Router>    
    

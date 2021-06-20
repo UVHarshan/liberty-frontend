@@ -6,7 +6,7 @@ export default class Footer extends Component {
 
   render() {
     return (
-        <footer className="full-footer pt-2">
+        <footer className="full-footer pt-2 bg-dark">
             <div className="container top-footer">
               <div className="row">
         
@@ -16,16 +16,16 @@ export default class Footer extends Component {
                   
         
                 <div className="col-md-4  pl-4 pr-4">
-                  <h3> Categories </h3>
-                  <Link to=""> Grocery </Link><br/>
-                  <Link to=""> Household </Link><br/>
+                  <Link to=""> <h3> Categories </h3></Link><br/>
+                  <Link to="#"> Grocery </Link><br/>
+                  <Link to="#"> Household </Link><br/>
                   <Link to=""> Vegetables </Link><br/>
                   <Link to=""> Fruits </Link> <br/>
                   <Link to=""> Dairy Products </Link>
                 </div>
         
                 <div className="col-md-4  pl-4 pr-4">
-                  <h3>Contact Us</h3>
+                 <Link to=""> <h3>Contact Us</h3> </Link><br/>
                  <Link to="tel:0778075378"><i className="fas fa-phone"></i> 0775287894 </Link><br/>
                  <Link to="mailto:libertySC@gmail.com"><i className="fas fa-envelope"></i> libertySC@gmail.com</Link><br/>
                 </div>

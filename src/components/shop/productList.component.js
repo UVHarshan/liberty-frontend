@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import axios from "axios";    // Axios is used to connect front-end to the back-end
 import Product from './product.component';
 

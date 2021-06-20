@@ -28,9 +28,9 @@ export default class Navbar extends Component {
                                 Categories
                             </Link>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><Link to="" className="dropdown-item"> Household</Link></li>
-                                <li><Link to="" className="dropdown-item"> Grocery </Link></li>
-                                <li><Link to="" className="dropdown-item"> Diary Products </Link></li>
+                                <li><Link to="/customer/household" className="dropdown-item"> Household</Link></li>
+                                <li><Link to="/customer/groceryProducts" className="dropdown-item"> Grocery </Link></li>
+                                <li><Link to="/customer/dairyProducts" className="dropdown-item"> Diary Products </Link></li>
                                 <li><Link to="" className="dropdown-item"> Fruits </Link></li>
                                 <li><Link to="" className="dropdown-item"> Vegetables </Link></li>
                             </ul>

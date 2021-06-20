@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import axios from 'axios'
-
+import axios from 'axios';
 
 export default class EditProduct extends Component {
   constructor(props) {
@@ -95,7 +94,7 @@ export default class EditProduct extends Component {
       .then(res => console.log(res.data));
 
 
-    //   window.location = "/shop/add-product";
+      window.location = "/shop/product-list";
   }
 
 
@@ -104,7 +103,7 @@ export default class EditProduct extends Component {
         <div className="container-fluid pt-4 pb-4">
             <div className="add-product card bg-light">
               <div className="card-body">
-                <center>  <h1> Add Product </h1> </center>
+                <center>  <h1> Edit Product </h1> </center>
                 <form onSubmit={this.onSubmit}>
                     <div className="mb-3">
                       <label for="exampleInputBrand" className="form-label"> Brand</label>

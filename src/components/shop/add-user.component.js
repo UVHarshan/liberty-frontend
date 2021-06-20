@@ -69,7 +69,7 @@ export default class AddUser extends Component {
         .post("http://localhost:5000/users/add", user)
         .then((res) => console.log(res.data));
 
-      // window.location = "/shop/add-product";
+      window.location = "/shop/add-user";
   }
 
 

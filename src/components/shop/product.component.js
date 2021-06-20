@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-//  This is a functional component
+//  This is a functional component( Receiving props from the ProductList component)
 const Product = (props) => ( 
     <tr>
       <td>{props.product.brand}</td>
@@ -10,14 +10,14 @@ const Product = (props) => (
       <td>{props.product.price}</td>
       <td>{props.product.quantity}</td>
       <td>
-        <Link to={"/shop/edit-product/" + props.product._id}>edit</Link> |{" "}
+        <Link to={"/shop/edit-product/" + props.product._id}>Edit</Link> |{" "}
         <a
           href="#"
           onClick={ () => {
             props.deleteProduct(props.product._id);
           }}
         >
-          delete
+          Delete
         </a>
       </td>
     </tr>

@@ -13,7 +13,7 @@ export default class Carousal extends Component {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src={dairy} className="d-block w-100" alt="..."/>
+                    <img src={dairy} className="d-block w-100" alt="..." />
                   </div>
                   <div className="carousel-item">
                     <img src={grocery} className="d-block w-100" alt="..."/>

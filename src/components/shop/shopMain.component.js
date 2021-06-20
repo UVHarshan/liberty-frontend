@@ -13,14 +13,16 @@ import CategoryList from "./categoryList";
 import UsersList from "./userList.component";
 import EditUser from "./edit-user.component";
 import EditProduct from "./edit-product.component";
+import AddBill from "./add-bill.component";
+import Dashboard from "./dashboard.component";
+import AddSupplier from "./add-supplier";
+import SendOrder from "./sendOrder";
 
 function Shop() {
   return (    
     <Router>
-
-      <div class="container-fluid">          
+          
         <Navbar/>
-
         <div class="row">
             <div className="col-3"> 
                 <Sidebar/>
@@ -34,6 +36,10 @@ function Shop() {
                 <Route path="/shop/user-list"  component= {UsersList} />
                 <Route path="/shop/edit-user/:id" component={EditUser} />
                 <Route path="/shop/edit-product/:id" component={EditProduct} />
+                <Route path="/shop/add-bill" component={AddBill} />
+                <Route path="/shop/dashboard" component={Dashboard} />
+                <Route path="/shop/add-supplier" component={AddSupplier} />
+                <Route path="/shop/send-order" component={SendOrder} />
 
             </div>
         </div>
@@ -44,14 +50,11 @@ function Shop() {
         <Route path="/customer/signup" component={Signup} />
         <Route path="/customer/login" component={Login} /> */}
         <br/>
-        <br/>
-        
+        <br/>      
 
         
         {/* <Route path="/customer" component={Customer} />
         <Route path="/shop" component={Shop} /> */}
-      </div>    
-
     </Router>      
   );
 }

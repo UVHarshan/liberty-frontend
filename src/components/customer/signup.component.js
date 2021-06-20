@@ -78,14 +78,14 @@ export default class Signup extends Component {
           .post("http://localhost:5000/customers/add", customer)
           .then((res) => console.log(res.data));
     
-        //window.location = "/customer/signup";
+        window.location = "/customer/signup";
     }
 
     render() {
         return (
             <section className="pt-4">            
                 <div className="signup card mx-auto" >
-                    <h1> Create an account </h1>
+                   <center> <h1> Create an account </h1> </center> 
                     <div className="card-body">
                         <form onSubmit={this.onSubmit} >
                             <div className="mb-3">

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import axios from 'axios'
-
+import axios from 'axios';
 
 export default class AddProduct extends Component {
   constructor(props) {
@@ -39,8 +38,6 @@ export default class AddProduct extends Component {
   }
 
 
-
-
   onChangeBrand(e) {
     console.log(this.state.brand)
     this.setState({
@@ -75,6 +72,7 @@ export default class AddProduct extends Component {
       quantity: e.target.value,
     });
   }
+  
 
   onSubmit(e) {
     e.preventDefault(); // What is the usage??????
@@ -95,6 +93,14 @@ export default class AddProduct extends Component {
       .then((res) => console.log(res.data));
 
     // window.location = "/shop/add-product";
+
+    this.setState({
+      brand: "",
+      item: "",
+      category: "",
+      price: "",
+      quantity: ""
+    })
   }
 
 
